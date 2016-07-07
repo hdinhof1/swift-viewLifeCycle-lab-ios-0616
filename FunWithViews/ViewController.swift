@@ -21,11 +21,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var bottomRight: UIView!
     
     @IBOutlet weak var first: UIView!
-    @IBOutlet weak var second: UILabel!
-    @IBOutlet weak var third: UILabel!
-    @IBOutlet weak var fourth: UILabel!
-    @IBOutlet weak var fifth: UILabel!
-    @IBOutlet weak var sixth: UILabel!
+    @IBOutlet weak var second: UIView!
+    @IBOutlet weak var third: UIView!
+    @IBOutlet weak var fourth: UIView!
+    @IBOutlet weak var fifth: UIView!
+    @IBOutlet weak var sixth: UIView!
+
     
     @IBOutlet weak var firstLabel: UILabel!
     @IBOutlet weak var secondLabel: UILabel!
@@ -38,15 +39,16 @@ class ViewController: UIViewController {
 //    #pragma TODO: add a clear rollList if number of rolls == 6
     @IBAction func dieTapped(sender: AnyObject) {
         let dieNumber = randomDiceRoll()
-        
+        print ("A \(dieNumber) was rolled!")
+        if (self.rollList.count == 6) { self.rollList.removeAll() ; self.hidePreviousRolls() }
         
         switch dieNumber {
-        case 1: displayOne();displayRollValue(1) ; rollList.append(1)
-        case 2: displayTwo() ; displayRollValue(2);  rollList.append(2)
-        case 3: displayThree() ; displayRollValue(3); rollList.append(3)
-        case 4: displayFour() ; displayRollValue(4); rollList.append(4)
-        case 5: displayFive() ; displayRollValue(5) ; rollList.append(5)
-        case 6: displaySix(); displayRollValue(6); rollList.append(6) 
+        case 1: displayOne(); displayRollValue(1)
+        case 2: displayTwo() ; displayRollValue(2)
+        case 3: displayThree() ; displayRollValue(3)
+        case 4: displayFour() ; displayRollValue(4)
+        case 5: displayFive() ; displayRollValue(5)
+        case 6: displaySix(); displayRollValue(6)
             default:
                 print ("An error occurred for die number \(dieNumber)")
         }
@@ -126,17 +128,26 @@ class ViewController: UIViewController {
         self.bottomRight.hidden = false
     }
     func displayRollValue(rollNumber: Int) {
+        self.rollList.append(rollNumber)
         let ithRollNumber = self.rollList.count
-        
+
         switch ithRollNumber {
-        case 0: first.hidden = false ; firstLabel.text = String(rollNumber)
-        case 1: second.hidden = false ; secondLabel.text = String(rollNumber)
-        case 2: third.hidden = false ; thirdLabel.text = String(rollNumber)
-        case 3: fourth.hidden = false ; fourthLabel.text = String(rollNumber)
-        case 4: fifth.hidden = false ;  fifthLabel.text = String(rollNumber)
-        case 5: sixth.hidden = false ; sixthLabel.text  = String(rollNumber)
+        case 1: first.hidden = false ; firstLabel.text = String(rollNumber)
+        case 2: second.hidden = false ; secondLabel.text = String(rollNumber)
+        case 3: third.hidden = false ; thirdLabel.text = String(rollNumber)
+        case 4: fourth.hidden = false ; fourthLabel.text = String(rollNumber)
+        case 5: fifth.hidden = false ;  fifthLabel.text = String(rollNumber)
+        case 6: sixth.hidden = false ; sixthLabel.text  = String(rollNumber)
         default:
             print("Perhaps too many rolls? The count is currently \(ithRollNumber)")
         }
+    }
+    func hidePreviousRolls() {
+        first.hidden = true
+        second.hidden = true
+        third.hidden = true
+        fourth.hidden = true
+        fifth.hidden = true
+        sixth.hidden = true
     }
 }

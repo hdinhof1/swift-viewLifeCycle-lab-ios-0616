@@ -48,7 +48,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" id="27x-EE-SaR">
+                            <view hidden="YES" contentMode="scaleToFill" id="27x-EE-SaR" userLabel="first">
                                 <rect key="frame" x="20" y="284" width="30" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -56,13 +56,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" id="Lq4-xd-eOg">
+                            <view hidden="YES" contentMode="scaleToFill" id="Lq4-xd-eOg" userLabel="second">
                                 <rect key="frame" x="70" y="284" width="30" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -70,13 +70,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" id="Vg6-NO-FIg">
+                            <view hidden="YES" contentMode="scaleToFill" id="Vg6-NO-FIg" userLabel="third">
                                 <rect key="frame" x="119" y="284" width="30" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -84,13 +84,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" id="Hf8-wp-j7w">
+                            <view hidden="YES" contentMode="scaleToFill" id="Hf8-wp-j7w" userLabel="fourth">
                                 <rect key="frame" x="173" y="284" width="30" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -98,13 +98,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" id="QNC-pT-fED">
+                            <view hidden="YES" contentMode="scaleToFill" id="QNC-pT-fED" userLabel="fifth">
                                 <rect key="frame" x="221" y="284" width="30" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -112,21 +112,21 @@
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" id="5hg-Q0-l3g">
+                            <view hidden="YES" contentMode="scaleToFill" id="5hg-Q0-l3g" userLabel="sixth">
                                 <rect key="frame" x="270" y="284" width="30" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n7m-Hv-LkP" userLabel="6">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n7m-Hv-LkP">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -148,20 +148,20 @@
                         <outlet property="bottomLeft" destination="Ok6-3J-vrA" id="dYG-g6-LFr"/>
                         <outlet property="bottomRight" destination="0Pz-AT-j57" id="cH1-81-Hos"/>
                         <outlet property="center" destination="wg2-KV-WIa" id="KHX-Se-Les"/>
-                        <outlet property="fifth" destination="KbG-gK-Q1W" id="tZz-jS-lCY"/>
-                        <outlet property="fifthLabel" destination="KbG-gK-Q1W" id="A4e-hS-pZA"/>
+                        <outlet property="fifth" destination="QNC-pT-fED" id="I56-Si-vR0"/>
+                        <outlet property="fifthLabel" destination="KbG-gK-Q1W" id="oHX-LX-rzo"/>
                         <outlet property="first" destination="27x-EE-SaR" id="7ZR-Jj-NGT"/>
                         <outlet property="firstLabel" destination="sEx-UP-G6f" id="Xdd-nb-W8I"/>
-                        <outlet property="fourth" destination="p84-ls-ua3" id="FXD-Wd-awX"/>
-                        <outlet property="fourthLabel" destination="p84-ls-ua3" id="Uk4-Eh-7fo"/>
+                        <outlet property="fourth" destination="Hf8-wp-j7w" id="duT-MC-P8c"/>
+                        <outlet property="fourthLabel" destination="p84-ls-ua3" id="xgO-as-Rmw"/>
                         <outlet property="midLeft" destination="71R-Bw-c2h" id="vlA-qJ-qDX"/>
                         <outlet property="midRight" destination="M9g-0L-mdR" id="dgo-vV-UoX"/>
-                        <outlet property="second" destination="cj7-FW-LhW" id="bIA-s9-CoC"/>
-                        <outlet property="secondLabel" destination="cj7-FW-LhW" id="GjM-Ie-pwH"/>
-                        <outlet property="sixth" destination="n7m-Hv-LkP" id="uzX-rh-ygp"/>
-                        <outlet property="sixthLabel" destination="n7m-Hv-LkP" id="hU4-qx-XR6"/>
-                        <outlet property="third" destination="7Hr-wk-yy0" id="h13-VF-qVO"/>
-                        <outlet property="thirdLabel" destination="7Hr-wk-yy0" id="VxQ-AI-oQR"/>
+                        <outlet property="second" destination="Lq4-xd-eOg" id="OqI-ri-Rml"/>
+                        <outlet property="secondLabel" destination="cj7-FW-LhW" id="OHw-6g-A1r"/>
+                        <outlet property="sixth" destination="5hg-Q0-l3g" id="W82-QD-4Gs"/>
+                        <outlet property="sixthLabel" destination="n7m-Hv-LkP" id="nvn-Yc-CqT"/>
+                        <outlet property="third" destination="Vg6-NO-FIg" id="0T6-jA-cQw"/>
+                        <outlet property="thirdLabel" destination="7Hr-wk-yy0" id="Ovf-HC-Phv"/>
                         <outlet property="upperLeft" destination="iw2-bV-5Sf" id="cwH-1j-8zu"/>
                         <outlet property="upperRight" destination="CEQ-sn-ZOa" id="a5L-ap-x0y"/>
                     </connections>
