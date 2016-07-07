@@ -20,13 +20,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var midRight: UIView!
     @IBOutlet weak var bottomRight: UIView!
     
+    
+    
     @IBOutlet weak var first: UIView!
     @IBOutlet weak var second: UIView!
     @IBOutlet weak var third: UIView!
     @IBOutlet weak var fourth: UIView!
     @IBOutlet weak var fifth: UIView!
     @IBOutlet weak var sixth: UIView!
-
     
     @IBOutlet weak var firstLabel: UILabel!
     @IBOutlet weak var secondLabel: UILabel!
@@ -36,19 +37,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var sixthLabel: UILabel!
     
     
-//    #pragma TODO: add a clear rollList if number of rolls == 6
+
     @IBAction func dieTapped(sender: AnyObject) {
         let dieNumber = randomDiceRoll()
         print ("A \(dieNumber) was rolled!")
         if (self.rollList.count == 6) { self.rollList.removeAll() ; self.hidePreviousRolls() }
         
         switch dieNumber {
-        case 1: displayOne(); displayRollValue(1)
-        case 2: displayTwo() ; displayRollValue(2)
-        case 3: displayThree() ; displayRollValue(3)
-        case 4: displayFour() ; displayRollValue(4)
-        case 5: displayFive() ; displayRollValue(5)
-        case 6: displaySix(); displayRollValue(6)
+        case 1: displayOne()
+        case 2: displayTwo()
+        case 3: displayThree()
+        case 4: displayFour()
+        case 5: displayFive()
+        case 6: displaySix()
             default:
                 print ("An error occurred for die number \(dieNumber)")
         }
@@ -76,6 +77,7 @@ class ViewController: UIViewController {
         self.bottomRight.hidden = true
         
         self.center.hidden = false
+        displayRollValue(1)
     }
     func displayTwo() {
         self.upperLeft.hidden = true
@@ -86,6 +88,7 @@ class ViewController: UIViewController {
         
         self.bottomLeft.hidden = false
         self.upperRight.hidden = false
+        displayRollValue(2)
     }
     func displayThree() {
         self.upperLeft.hidden = true
@@ -96,6 +99,7 @@ class ViewController: UIViewController {
         self.bottomLeft.hidden = false
         self.center.hidden = false
         self.upperRight.hidden = false
+        displayRollValue(3)
     }
     func displayFour() {
         self.midLeft.hidden = true
@@ -106,6 +110,7 @@ class ViewController: UIViewController {
         self.bottomLeft.hidden = false
         self.upperRight.hidden = false
         self.bottomRight.hidden = false
+        displayRollValue(4)
     }
     func displayFive() {
         self.midLeft.hidden = true
@@ -116,6 +121,7 @@ class ViewController: UIViewController {
         self.center.hidden = false
         self.upperRight.hidden = false
         self.bottomRight.hidden = false
+        displayRollValue(5)
     }
     func displaySix() {
         self.center.hidden = true
@@ -126,6 +132,7 @@ class ViewController: UIViewController {
         self.upperRight.hidden = false
         self.midRight.hidden = false
         self.bottomRight.hidden = false
+        displayRollValue(6)
     }
     func displayRollValue(rollNumber: Int) {
         self.rollList.append(rollNumber)
