@@ -42,7 +42,8 @@ class ViewController: UIViewController {
     @IBAction func dieTapped(sender: AnyObject) {
         let dieNumber = randomDiceRoll()
         print ("A \(dieNumber) was rolled!")
-        if (self.rollCount == 6) { self.hidePreviousRolls() ; self.rollCount = 0 }
+        if (self.rollCount == 6) { self.hidePreviousRolls() ; self.rollCount = 0}
+        self.rollCount += 1
         
         switch dieNumber {
         case 1: displayOne()
@@ -136,7 +137,6 @@ class ViewController: UIViewController {
         displayRollValue(6)
     }
     func displayRollValue(rollNumber: Int) {
-        self.rollCount += 1
 
         switch self.rollCount {
         case 1: first.hidden = false ; firstLabel.text = String(rollNumber)
