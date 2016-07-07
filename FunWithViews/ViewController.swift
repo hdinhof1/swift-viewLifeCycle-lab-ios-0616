@@ -10,7 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 //  var rollList = [Int]() practicing array init
-    var rollList : [Int] = []
+//  var rollList : [Int] = []
+    var rollCount = 0
     
     @IBOutlet weak var upperLeft: UIView!
     @IBOutlet weak var midLeft: UIView!
@@ -41,7 +42,7 @@ class ViewController: UIViewController {
     @IBAction func dieTapped(sender: AnyObject) {
         let dieNumber = randomDiceRoll()
         print ("A \(dieNumber) was rolled!")
-        if (self.rollList.count == 6) { self.rollList.removeAll() ; self.hidePreviousRolls() }
+        if (self.rollCount == 6) { self.hidePreviousRolls() ; self.rollCount = 0 }
         
         switch dieNumber {
         case 1: displayOne()
@@ -135,10 +136,9 @@ class ViewController: UIViewController {
         displayRollValue(6)
     }
     func displayRollValue(rollNumber: Int) {
-        self.rollList.append(rollNumber)
-        let ithRollNumber = self.rollList.count
+        self.rollCount += 1
 
-        switch ithRollNumber {
+        switch self.rollCount {
         case 1: first.hidden = false ; firstLabel.text = String(rollNumber)
         case 2: second.hidden = false ; secondLabel.text = String(rollNumber)
         case 3: third.hidden = false ; thirdLabel.text = String(rollNumber)
@@ -146,7 +146,7 @@ class ViewController: UIViewController {
         case 5: fifth.hidden = false ;  fifthLabel.text = String(rollNumber)
         case 6: sixth.hidden = false ; sixthLabel.text  = String(rollNumber)
         default:
-            print("Perhaps too many rolls? The count is currently \(ithRollNumber)")
+            print("Perhaps too many rolls? The count is currently \(self.rollCount)")
         }
     }
     func hidePreviousRolls() {
